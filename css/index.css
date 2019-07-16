@@ -1,3 +1,336 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/*ENTIRE PAGE*/
+.container {
+    margin:auto;
+	width: 900px;
+	text-align: left;
+	}
+
+/*NAV @ TOP OF PAGE*/
+header nav {
+	display: inline-block;
+	margin: 50px 0 0 0;
+}
+/*GREAT IDEA LIGHTBULB*/
+.logo{
+	margin: -25px 140px 2px 637px;
+
+}
+
+div{
+	line-height: 1.25;
+}
+header nav a {
+		  /*TB LR*/
+	margin: 0 20px; 
+	color: gray;
+	text-decoration: none;
+}
+/*INOVATION ON DEMAND TITLE*/
+.innovte{
+	margin-top: 100px;
+    margin-left: 100px;
+    font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	font-size: 100px;
+	text-align: inherit;
+	
+}
+/*GET STARTED BUTTON*/
+button{
+	background: white;
+    border: 1px solid black;
+	padding: 5px 30px 5px 30px;
+	margin: 0 150px 90px 150px;
+}
+
+/*ROUND IMAGE*/
+.round-img{ 
+position: absolute;
+top: 150px;
+right: 350px;
+bottom: 500px;
+}
+
+/*TOP BORDER LINE IN MAIN CONTENT*/
+.features, .about{
+	vertical-align: middle;
+	display: inline-block;
+    width: 49%;
+}
+
+/*HEADERS IN MAIN CONTENT*/	
+.text-content1,
+.text-content2{
+	display: inline-block;
+	width: 49%;
+	vertical-align: left;
+}
+
+/*Middle Image - rectangle*/
+.middle-img{
+	margin: 20px 0 19px 0px;
+}
+
+.text-content3,
+.text-content4,
+.text-content5{
+	display: inline-block;
+	width: 33%;
+	vertical-align: left;
+	padding: 0 15px 0 0;
+	margin: 20px 0 43px 0px;
+}
+
+.contact{
+	padding: 20px 0 5px 0;
+}
+
+.copyright{
+	margin: 0 0 40px 37%;
+}
+
+/* Media queries max-width = 800px*/
+@media(max-width: 800px) {
+     .container {
+        width: 100%;
+        margin: auto;
+        border: 3px solid purple;
+    } 
+    .round-img {
+        display: none;
+    }
+    header .navigation {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .navigation img {
+        width: 100%;
+        align-content: center;
+        margin: 0 0 30px 0;
+    }
+    .cta-text {
+        width: 100%; 
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        border-bottom: 1.5px solid black;
+    } 
+    .cta-text button {
+        padding: 5px 60px 5px 69px;
+        margin: 1% 25% 18% 37%;
+    }
+    .main-content{
+        width: 100%;
+        display: flex;
+        align-content: space-evenly;
+    }
+    .top-content {
+        display: flex;
+        align-content: space-between;
+        /* width: 100%; */
+        flex-wrap: wrap; 
+        margin: 8% 0 0 2%;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    .bottom-content {
+        display: flex;
+        align-content: space-between;
+        /* width: 100%; */
+        flex-wrap: wrap; 
+        margin: 8% 0 0 2%;
+        border-bottom: 1.5px solid black;
+    }
+    hr {
+        display: none;
+    }
+    .contact address{
+        margin: 2% 2.2%;
+    }
+}
+                /* ///////////////////// */
+/* Media queries max-width = 500px*/
+@media (max-width:500px) {
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .round-img {
+        display: none;
+    }
+    header{
+        display: flex;
+        width: 100%;
+    }   
+    header .navigation{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }  
+     /* Great Idea Image - above nav */
+     header div{
+         order: -1;
+     }
+     /* NAV features/a tags */
+     header .navigation a{
+        text-align: center;
+        margin: 10px 0;
+        width: 100%;
+     }
+     .navigation a:nth-child(1){ /* Services */
+        padding-bottom: 25px;
+        padding-top: 25px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+     }
+     .navigation a:nth-child(2){ /* Product */
+        padding-bottom: 25px;
+        border-bottom: 1px solid black; 
+     }
+     .navigation a:nth-child(3){ /* Vision */
+        padding-bottom: 25px;
+        border-bottom: 1px solid black; 
+     }
+     .navigation a:nth-child(4){ /* Features */
+        padding-bottom: 25px;
+        border-bottom: 1px solid black; 
+     }
+     .navigation a:nth-child(5){ /* About */
+        padding-bottom: 25px;
+        border-bottom: 1px solid black; 
+     }
+     .navigation a:nth-child(6){ /* Contact */
+        padding-bottom: 25px;
+        border-bottom: 1px solid black; 
+     }
+      /* Innovation on Demand  */
+      .cta-text{
+        width: 100%; 
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        border-bottom: 1.5px solid black;
+      }
+      .innovte {
+          margin: 0 5%;
+      }
+      .cta-text button {
+        margin: 10px 25% 18% 25%;
+    }
+    .top-content {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 8% 2%;
+    }
+    .top-content .text-content1{
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+    .top-content .text-content2{
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+    .middle-img{
+        width:100%;
+        margin: -7% 0;
+    }
+    .main-content{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 8% 2%;
+        padding: 0;
+    }
+    .bottom-content{
+        /* width: 100%; */
+        margin: 0% 2%;
+    }
+    .bottom-content .text-content3{
+        width: 100%;
+    }
+    .bottom-content .text-content4{
+        width: 100%;
+    }
+    .contact address{
+        margin: 2% 2.2%;
+    }
+} 
 
 
