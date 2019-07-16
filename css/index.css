@@ -159,6 +159,7 @@ bottom: 500px;
 /* Media queries max-width = 800px*/
 @media(max-width: 800px) {
      .container {
+         width: 100%;
         margin: 0 15px 0 15px;
     } 
     .round-img {
@@ -166,8 +167,7 @@ bottom: 500px;
     }
     
     .navigation {
-        width: 79%;
-        /* border: 1px solid red; */
+        width: 97%;
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: space-around;
@@ -176,8 +176,7 @@ bottom: 500px;
         margin: 0 0 30px 0;
     }
     .cta-text {
-        width: 79%;
-        /* border: 1px solid blue; */
+        width: 97%;
         border-bottom: 1.5px solid black;
         text-align: center;
         align-self: center;
@@ -187,13 +186,13 @@ bottom: 500px;
         margin: 0 150px 90px 212px;
     }
     .main-content {
-        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
         margin-top: 35px;
-        width: 79%;
+        width: 97%;
         flex-wrap: wrap;
     }
     .bottom-content {
-        /* border: 1px solid red; */
         width: 79%;
         flex-wrap: wrap; 
         border-bottom: 1.5px solid black;
@@ -202,32 +201,41 @@ bottom: 500px;
         display: none;
     }
 }
+                /* ///////////////////// */
 /* Media queries max-width = 500px*/
 @media (max-width:500px) {
-    
+    .container{
+        border: 2px solid purple;
+        width: 96.5%;
+    }
     .round-img {
         display: none;
     }
     header{
         display: flex;
+        width: 100%;
     }   
     header .navigation{
-        border: 1px solid red;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
      }  
+     /* Great Idea Image - above nav */
      header div{
          order: -1;
      }
+     /* NAV features/a tags */
      header .navigation a{
         text-align: center;
-        margin: 25px 0;
+        margin: 10px 0;
         width: 100%;
      }
      .navigation a:nth-child(1){ /* Services */
         padding-bottom: 25px;
-        border-bottom: 1px solid black; 
+        padding-top: 25px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
      }
      .navigation a:nth-child(2){ /* Product */
         padding-bottom: 25px;
@@ -251,15 +259,20 @@ bottom: 500px;
      }
       /* Innovation on Demand  */
       .cta-text{
+        width: 100%; 
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        border: 3px solid red;
         border-bottom: 1.5px solid black;
-        /* border: 1px solid red; */
-        /* display: flex; */
-        align-self: center;
       }
+      .innovte {
+          margin: 0 0 0 0;
+      }
+
       .cta-text button {
-          margin: auto;
-        padding: 5px 54px 5px 54px;
-        margin: 0 150px 90px 212px;
+        margin: 10px 25% 18% 25%;
     }
     .top-content {
         display:flex;
