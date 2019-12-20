@@ -161,7 +161,6 @@ bottom: 500px;
      .container {
         width: 100%;
         margin: auto;
-        border: 3px solid purple;
     } 
     .round-img {
         display: none;
